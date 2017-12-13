@@ -1,9 +1,21 @@
 schema_version: 1
 modules:
     repositories:
-      - git:
-          url: https://github.com/ochaloup/cct_module.git
-          ref: table-prefix
+        - git:
+            url: https://github.com/ochaloup/cct_module.git
+            ref: table-prefix
 envs:
+  - name: "DB_SERVICE_PREFIX_MAPPING"
+    value: "pg-postgresql=PG"
   - name: "TX_DATABASE_PREFIX_MAPPING"
     value: "pg-postgresql=PG"
+  - name: "PG_DATABASE"
+    value: "crashrec"
+  - name: "PG_USERNAME"
+    value: "crashrec"
+  - name: "PG_PASSWORD"
+    value: "crashrec"
+  - name: "PG_POSTGRESQL_SERVICE_HOST"
+    value: "postgresqleap7"
+  - name: "PG_POSTGRESQL_SERVICE_PORT"
+    value: "5432"

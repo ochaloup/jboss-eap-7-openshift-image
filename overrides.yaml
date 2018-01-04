@@ -1,0 +1,5 @@
+schema_version: 1
+modules:
+      repositories:
+        - path: "/home/ochaloup/openshift/cct_module"
+          name: "cct_module.git"
